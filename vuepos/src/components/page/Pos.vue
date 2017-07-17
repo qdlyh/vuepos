@@ -148,20 +148,22 @@ export default {
       this.totalMoney = 0; //金额
       let isHave = false;
       //判断是否这个商品已经存在于订单列表
+      //遍历拿到点击进来的商品id
       for (let i = 0; i < this.tableData.length; i++) {
         console.log(this.tableData[i].goodsId);
+        //判断商品id是否存在
         if (this.tableData[i].goodsId == goods.goodsId) {
           isHave = true; //存在
         }
       }
       //根据isHave的值判断订单列表中是否已经有此商品
-      if (isHave) {
-        //存在就进行数量添加
+      if (isHave) {//存在就添加数量
+        //用过滤器判断传递进来的商品id是否一样，一样就添加数量
         let arr = this.tableData.filter(o => o.goodsId == goods.goodsId);
         arr[0].count++;
         //console.log(arr);
       } else {
-        //不存在就推入数组
+        //不存在就添加入新的一行商品 count: 1 
         let newGoods = { goodsId: goods.goodsId, goodsName: goods.goodsName, price: goods.price, count: 1 };
         this.tableData.push(newGoods);
 
@@ -178,12 +180,13 @@ export default {
     },
     //汇总数量和金额
     getAllMoney() {
-      this.totalCount = 0;
-      this.totalMoney = 0;
-      if (this.tableData) {
+      this.totalCount = 0;  //不清0会累加数量
+      this.totalMoney = 0;  //不清0会累加金额
+      if (this.tableData) { //判断tableData里面是否有值,有就进行计算商品数量和金额，没就不计算
+        //用forEach循环得出每个商品元素  Element 对象表示元素
         this.tableData.forEach((element) => {
-          this.totalCount += element.count;
-          this.totalMoney = this.totalMoney + (element.price * element.count);
+          this.totalCount += element.count;   //得出商品数量
+          this.totalMoney = this.totalMoney + (element.price * element.count); //商品价格*数量
         });
       }
 
@@ -196,16 +199,13 @@ export default {
     },
     //结账
     checkout() {
-      if (this.totalCount!=0) {
+      if (this.totalCount != 0) {
         //结账成功后数据清0
-          this.tableData=[];
-          this.totalCount=0;
-          this.totalMoney=0;
-          this.$message({
-            message:'结账成功',
-            type:'success'
-          })
-      }else{
+        this.tableData = [];
+        this.totalCount = 0;
+        this.totalMoney = 0;
+        this.$message.success('结账成功')
+      } else {
         this.$message.error('还没有添加商品哦！')
       }
     },
@@ -297,14 +297,6 @@ export default {
   padding: 10px;
   border-bottom: 1px solid #d3dce6;
 }
-
-
-
-
-
-
-
-
 
 
 
