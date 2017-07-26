@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+    $("#Table1 input[type='radio']").click(function(){
+        var radios=    $("#Table1 input[checked=true]");
+        var num=0;
+        radios.each(function(){
+	     num+=parseInt(this.value);
+});
+        $("#spanSum").html(num);
+    });
+});
+</script>
+<table align="center" id="Table1">
+        <tr>
+            <td style="width:5%">平和质/序号</td>
+            <td style="width:35%">
+                &nbsp;</td>
+            <td style="width:10%">
+                没有(根本不)<td  style="width:10%">
+                很少(有一点)</td>
+            <td  style="width:10%">
+                有时(有些)</td>
+            <td  style="width:10%">
+                经常(相当)</td>
+            <td  style="width:5%">
+                总是(非常)</td>
+             
+        </tr>
+        <tr>
+            <td style="width:5%">1</td>
+            <td style="width:40%">
+                你精力充沛吗? </td>
+            <td style="width:10%">
+                <input id="Radio1"   name="R1phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio2"  name="R1phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio3" name="R1phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio4" name="R1phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio5" name="R1phz" type="radio" value="5" />5分</td>
+             
+        </tr>
+        <tr>
+            <td style="width:5%">2</td>
+            <td style="width:40%">
+                你容易疲乏吗? *</td>
+             <td style="width:10%">
+                <input id="Radio6"  name="R2phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio7"  name="R2phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio8"  name="R2phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio9"  name="R2phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio10"  name="R2phz" type="radio" value="5" />5分</td>
+             
+        </tr>
+        <tr>
+            <td style="width:5%">3</td>
+            <td style="width:40%">
+                你说话声音低弱无力吗? *</td>
+          <td style="width:10%">
+                <input id="Radio11"  name="R3phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio12"  name="R3phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio13" name="R3phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio14"  name="R3phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio15"  name="R3phz" type="radio" value="5" />5分</td>
+             
+        </tr>
+        <tr>
+            <td style="width:5%">4</td>
+            <td style="width:40%">
+                你闷闷不乐、情绪低沉吗？ *</td>
+         <td style="width:10%">
+                <input id="Radio16"  name="R4phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio17"  name="R4phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio18"  name="R4phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio19"  name="R4phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio20"  name="R4phz" type="radio" value="5" />5分</td>
+             
+             
+        </tr>
+        <tr>
+            <td style="width:5%">5</td>
+            <td style="width:40%">
+                你比一般人耐受不了寒冷吗？* </td>
+         <td style="width:10%">
+                <input id="Radio21"  name="R5phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio22"  name="R5phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio23"  name="R5phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio24"  name="R5phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio25"  name="R5phz" type="radio" value="5" />5分</td>
+             
+             
+        </tr>
+        <tr>
+            <td style="width:5%">6</td>
+            <td style="width:40%">
+                你能适应外界自然和社会环境的变化吗？</td>
+           <td style="width:10%">
+                <input id="Radio26"  name="R6phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio27"  name="R6phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio28"  name="R6phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio29"  name="R6phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio30"  name="R6phz" type="radio" value="5" />5分</td>
+        </tr>
+        <tr>
+            <td style="width:5%">7</td>
+            <td style="width:40%">
+                你容易失眠吗？ *</td>
+            <td style="width:10%">
+                <input id="Radio31"  name="R7phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio32"  name="R7phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio33"  name="R7phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio34"  name="R7phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio35"  name="R7phz" type="radio" value="5" />5分</td>
+        </tr>
+        <tr>
+            <td style="width:5%">8</td>
+            <td style="width:40%">
+                你容易忘事吗? * </td>
+          <td style="width:10%">
+                <input id="Radio36" name="R8phz" type="radio" value="1" />1分</td>
+            <td  style="width:10%">
+                <input id="Radio37" name="R8phz" type="radio" value="2" />2分</td>
+            <td  style="width:10%">
+                <input id="Radio38" name="R8phz" type="radio" value="3" />3分</td>
+            <td  style="width:10%">
+                <input id="Radio39" name="R8phz" type="radio" value="4" />4分</td>
+            <td  style="width:10%">
+                <input id="Radio40" name="R8phz" type="radio" value="5" />5分</td>
+        </tr>
+        <tr>
+            <td colspan="7" class="showtext" ><span id="phz"></span></td>
+        </tr>
+        </table>
+        <br/>
+        选中的值总和: <span id="spanSum"></span>
+</body>
+</html>

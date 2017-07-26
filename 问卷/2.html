@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper/swiper.min.css">
+    <link rel="stylesheet" href="css/content.css">
+
+    <!-- Demo styles -->
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div id="app1" class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div id="img-doc" class="img-doc-s"></div>
+                <div class="question111">
+                    <div class="question-content">你的性别？</div>
+                </div>
+                <div class="q-index"><span class="item">1</span>/31
+                </div>
+                <div class="answer-wrap">
+                    <span>
+                <div>
+                  <div><label class="answer-content answer-content-dcell">男<input type="radio" name="radio1" value="1"></label></div>
+                  <div><label class="answer-content answer-content-dcell">女<input type="radio" name="radio1" value="2"></label></div>
+               </div> 
+                <label class="answer-content-next answer-content">下一题</label>
+                </span>
+                </div>
+                <div class="hr-divide"></div>
+            </div>
+            <div id="app2" class="swiper-slide">
+                <div id="img-doc" class="img-doc-s"></div>
+                <div class="question111">
+                    <div class="question-content">你的性别？a</div>
+                </div>
+                <div class="q-index"><span class="item">2</span>/31
+                </div>
+                <div class="answer-wrap">
+                    <span>
+                <div>
+                  <div><label class="answer-content answer-content-dcell">男<input type="radio" name="radio2" value="11"></label></div>
+                  <div><label class="answer-content answer-content-dcell">女<input type="radio" name="radio2" value="12"></label></div>
+               </div> 
+                <label class="answer-content-next answer-content">下一题</label>
+                  </span>
+                </div>
+                <div class="hr-divide"></div>
+            </div>
+            <div id="app2" class="swiper-slide">
+                <div id="img-doc" class="img-doc-s"></div>
+                <div class="question111">
+                    <div class="question-content">你的性别？a</div>
+                </div>
+                <div class="q-index"><span class="item">3</span>/31
+                </div>
+                <div class="answer-wrap">
+                    <span>
+                <div>
+                  <div><label class="answer-content answer-content-dcell">男<input type="radio" name="radio3" value="21"></label></div>
+                  <div><label class="answer-content answer-content-dcell">女<input type="radio" name="radio3" value="22"></label></div>
+               </div> 
+                <label class="answer-content-next answer-content">下一题</label>
+                  </span>
+                </div>
+                <div class="hr-divide"></div>
+            </div>
+            <div id="app2" class="swiper-slide">
+                <div id="img-doc" class="img-doc-s"></div>
+                <div class="question111">
+                    <div class="question-content">你的性别？a</div>
+                </div>
+                <div class="q-index"><span class="item">4</span>/31
+                </div>
+                <div class="answer-wrap">
+                    <span>
+                <div>
+                  <div><label class="answer-content answer-content-dcell">男<input type="radio" name="radio4" value="23"></label></div>
+                  <div><label class="answer-content answer-content-dcell">女<input type="radio" name="radio4" value="24"></label></div>
+               </div> 
+                <label class="answer-content-next answer-content">下一题</label>
+                  </span>
+                </div>
+                <div class="hr-divide"></div>
+            </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper/swiper.jquery.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            direction: 'vertical'
+        });
+        $('.answer-content-next').click(function () {
+            swiper.slideNext();
+        })
+  
+            $(".answer-content input[type='radio']").click(function () {           
+                var  num = 0;   
+                num = $(this).val();
+                console.log(num);    
+            });
+    </script>
+</body>
+
+</html>

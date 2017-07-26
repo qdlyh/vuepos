@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="css/swiper/swiper.min.css">
+  <link rel="stylesheet" href="css/mobiscroll/mobiscroll.min.css">
+  <link rel="stylesheet" href="css/content.css">
+  <title>问卷</title>
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div id="app1" class="swiper-slide">
+        <div id="img-doc" class="img-doc-s"></div>
+        <div class="question-content">你的性别？</div>
+        <div class="q-index"><span class="item">1</span>/31
+        </div>
+        <div class="answer-wrap">
+            <span>
+                <div>
+                  <div><label class="answer-content"><input type="radio" name="radio1" value="1">男</label></div>
+                  <div><label class="answer-content"><input type="radio" name="radio1" value="2">女</label></div>
+               </div> 
+                <div class="add">0</div>
+            </span>
+        </div>
+      </div>
+      <div id="app2" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你的出生日期？</div>
+        <div class="q-index"><span class="item">2</span>/31
+        </div>
+        <div class="answer-wrap">
+        <div><label class="time2 answer-content"><input id="StartTime" name="StartTime" type="text" value="" placeholder="选择出生日期" required></label></div>
+          <label class="answer-content-next answer-content">下一题</label>
+        </div>
+      </div>
+      <div id="app3" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">平均来说，你大便的频率如何？</div>
+        <div class="q-index"><span class="item">3</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+            <div><label class="answer-content"><input type="radio" name="radio3" value="1">每天超过1次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio3" value="2">每天1次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio3" value="3">两天1次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio3" value="4">三天1次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio3" value="5">四~五天1次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio3" value="5">超五天一次</label></div>
+          </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app4" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">每次大便平均多长时间？</div>
+        <div class="q-index"><span class="item">4</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+          <div><label class="answer-content"><input type="radio" name="radio4">&lt;2分钟</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio4">2-5分钟</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio4">5-10分钟</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio4">10-20分钟</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio4">&gt;20分钟</label></div></div> 
+          </span>
+        </div>
+      </div>
+      <div class="hr-divide"></div>
+      <div id="app5" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">就医或体检的时候，你做过肛门指检吗？</div>
+        <div class="q-index"><span class="item">5</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+             <div><label class="answer-content"><input type="radio" name="radio5">做过</label></div>
+             <div><label class="answer-content"><input type="radio" name="radio5">没做过</label></div>
+           </div> 
+          </span>
+        </div>
+      </div>
+      <div class="hr-divide"></div>
+      <div id="app6" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">最近一次指检，医生给你的诊断是？</div>
+        <div class="q-index"><span class="item">6</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span> <div>
+            <div><label class="answer-content"><input type="radio" name="radio6">内痔</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio6">外痔，血栓性外痔</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio6">外痔，静脉曲张性外痔</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio6">外痔，结缔组织外痔</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio6">痔疮，具体分类不清楚</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio6">没有痔疮</label></div>
+          </div> 
+        </span>
+        </div>
+
+      </div>
+      <div id="app7" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你是否吸烟？(如果你以前曾经吸烟，但现在已经戒烟，则按照以前情况回答)</div>
+        <div class="q-index"><span class="item">7</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span> 
+            <div>
+          <div><label class="answer-content"><input type="radio" name="radio7">从不</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio7">偶尔吸烟（平均每天&lt;2支烟，并且并非每天都吸烟）</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio7">少量吸烟（平均每天2~10支烟，即&lt;半包烟）</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio7">中等量吸烟（平均每天10-20支烟，即半包~1包之间）</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio7">吸烟比较多（平均每天&gt;1包烟）</label></div>
+        </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app8" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你吸烟共约多长时间？</div>
+        <div class="q-index"><span class="item">8</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+            <div><label class="answer-content"><input type="radio" name="radio8">&lt;2年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio8">2-5年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio8">5-10年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio8">10-20年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio8">&gt;20年</label></div>
+          </div> 
+        </span>
+        </div>
+
+      </div>
+      <div id="app9" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你是否饮酒？(如果你以前曾经饮酒，但现在已经戒酒，则按照以前情况回答)</div>
+        <div class="q-index"><span class="item">9</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+            <div><label class="answer-content"><input type="radio" name="radio9">从不，我滴酒不沾</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio9">偶尔饮酒，但并非每天都喝</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio9">少量饮酒（平均每天&lt;2两白酒）</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio9">中等量饮酒（平均每天2两~半斤白酒之间）</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio9">较大量饮酒（平均每天&gt;半斤白酒）</label></div>
+          </div>
+        </span>
+        </div>
+
+        <div class="hr-divide"></div>
+      </div>
+      <div id="app10" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你饮酒共约多长时间？</div>
+        <div class="q-index"><span class="item">10</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+             <div>
+            <div><label class="answer-content"><input type="radio" name="radio10">&lt;2年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio10">2-5年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio10">5-10年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio10">10-20年</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio10">&gt;20年</label></div>
+          </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app11" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你经常吃辛辣的食物吗？</div>
+        <div class="q-index"><span class="item">11</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+            <div><label class="answer-content"><input type="radio" name="radio11">从不</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio11">很少</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio11">有时</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio11">经常</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio11">总是</label></div>
+          </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app12" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你有贫血的情况吗？</div>
+        <div class="q-index"><span class="item">12</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+              <div><label class="answer-content"><input type="radio" name="radio12">没有</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio12">有</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio12">我也不知道</label></div>
+            </div> 
+        </span>
+        </div>
+
+      </div>
+      <div id="app13" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">大便之后擦拭时，手纸上会留下鲜血吗？</div>
+        <div class="q-index"><span class="item">13</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+            <div><label class="answer-content"><input type="radio" name="radio13">从不</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio13">很少</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio13">有时</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio13">经常</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio13">总是</label></div>
+          </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app14" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">大便时，发生过痔疮从肛门内脱出肛门外的情况吗？</div>
+        <div class="q-index"><span class="item">14</span>/31
+        </div>
+        <div class="answer-wrap"><span> 
+          <div>
+          <div><label class="answer-content"><input type="radio" name="radio14">从不</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio14">很少</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio14">有时</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio14">经常</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio14">总是</label></div>
+        </div>
+      </span>
+        </div>
+
+      </div>
+      <div id="app15" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">痔疮脱出肛门之后，容易恢复吗？</div>
+        <div class="q-index"><span class="item">15</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span> 
+          <div>
+          <div><label class="answer-content"><input type="radio" name="radio15">无须用手托回，即可自行恢复</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio15">需要用手托回才能恢复</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio15">需要用手托回才能恢复，恢复后还容易脱出</label></div>
+        </div>
+      </span>
+        </div>
+
+      </div>
+      <div id="app16" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">痔疮发生过嵌顿吗？（痔疮从肛门内脱出于肛门外，被肛门夹住，痔疮变大且疼痛，用手也无法将其送回肛门内）</div>
+        <div class="q-index"><span class="item">16</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+            <div><label class="answer-content"><input type="radio" name="radio16">从来没有</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio16">发生过1次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio16">发生过2~3次</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio16">发生过3次以上</label></div>
+          </div>
+        </span>
+        </div>
+
+
+      </div>
+      <div id="app17" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肛门表面有肿块或皮肤隆起吗？</div>
+        <div class="q-index"><span class="item">17</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+          <div><label class="answer-content"><input type="radio" name="radio17">没有</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio17">一直有</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio17">用力大便时有，按摩或过段时间之后会消失</label></div>
+        </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app18" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肛门外表面有肿块或皮肤隆起，会导致大便后肛门部位不易清洁吗？</div>
+        <div class="q-index"><span class="item">18</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+            <div><label class="answer-content"><input type="radio" name="radio18">会</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio18">不会</label></div>
+          </div> 
+        </span>
+        </div>
+
+      </div>
+      <div id="app19" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肿块或隆起，更接近于以下哪种？</div>
+        <div class="q-index"><span class="item">19</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+              <div><label class="answer-content"><input type="radio" name="radio19">外型像皮赘（类似皮肤皱褶）</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio19">外型偏圆,按之质硬</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio19">外型偏圆,按之柔软</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio19">其他</label></div>
+            </div> 
+        </span>
+        </div>
+
+      </div>
+      <div id="app20" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肿块或皮肤隆起的大小如何？</div>
+        <div class="q-index"><span class="item">20</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+          <div><label class="answer-content"><input type="radio" name="radio20">米粒大小</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio20">黄豆大小</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio20">花生大小</label></div>
+          <div><label class="answer-content"><input type="radio" name="radio20">比花生大</label></div>
+        </div> 
+        </span>
+        </div>
+
+      </div>
+      <div id="app21" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">大便的时候，肛门部位的疼痛情况如何？</div>
+        <div class="q-index"><span class="item">21</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+              <div><label class="answer-content"><input type="radio" name="radio21">不疼痛</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio21">有点疼痛</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio21">很痛</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio21">非常痛，无法忍受</label></div>
+            </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app22" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肛门部位有坠胀感吗？</div>
+        <div class="q-index"><span class="item">22</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+            <div><label class="answer-content"><input type="radio" name="radio22">从不</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio22">很少</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio22">有时</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio22">经常</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio22">总是</label></div>
+          </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app23" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肛门部位有发胀、发热感吗？</div>
+        <div class="q-index"><span class="item">23</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+            <div><label class="answer-content"><input type="radio" name="radio23">从不</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio23">很少</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio23">有时</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio23">经常</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio23">总是</label></div>
+          </div> 
+        </span>
+        </div>
+      </div>
+
+
+      <div id="app24" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">肛门部位、肛门周围发痒吗？</div>
+        <div class="q-index"><span class="item">24</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+              <div><label class="answer-content"><input type="radio" name="radio24">从不</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio24">很少</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio24">有时</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio24">经常</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio24">总是</label></div>
+            </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app25" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">有时候，肛门会有粘液流出吗？</div>
+        <div class="q-index"><span class="item">25</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+              <div><label class="answer-content"><input type="radio" name="radio25">从来没有</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio25">大便的时候有</label></div>
+              <div><label class="answer-content"><input type="radio" name="radio25">大便的时候有，平时也会有</label></div>
+            </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app26" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你采用过以下方法来应对痔疮症状吗？(多选）</div>
+        <div class="q-index"><span class="item">26</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+              <div><label class="answer-content"><input type="checkbox" value="13">避免吃辣</label></div>
+              <div><label class="answer-content"><input type="checkbox">坚持每天50次提肛运动（往上提收肛门，然后放松，一提一松为1次）</label></div>
+              <div><label class="answer-content"><input type="checkbox">接受痔疮手术</label></div>
+              <div><label class="answer-content"><input type="checkbox">每天或每次大便后用水清洗肛门</label></div>
+              <div><label class="answer-content"><input type="checkbox">使用喷水水疗马桶</label></div>
+              <div><label class="answer-content"><input type="checkbox">大量饮水，坚持每天8杯水</label></div>
+              <div><label class="answer-content"><input type="checkbox">经常用热水坐浴或热敷</label></div>
+              <div><label class="answer-content"><input type="checkbox">多吃香蕉、蜂蜜类润肠通便食物</label></div>
+              <div><label class="answer-content"><input type="checkbox">不保持久坐久站，经常变换身体姿势</label></div>
+            </div>
+              <label class="answer-content answer-content-next">选好了，下一题</label>
+        </span>
+        </div>
+
+      </div>
+      <div id="app27" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你用药了吗？</div>
+        <div class="q-index"><span class="item">27</span>/31
+        </div>
+        <div class="answer-wrap">
+          <span>
+            <div>
+            <div><label class="answer-content"><input type="radio" name="radio27">用了</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio27">没用药</label></div>
+          </div>
+        </span>
+        </div>
+
+      </div>
+      <div id="app28" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你用过以下哪些药？</div>
+        <div class="q-index"><span class="item">28</span>/31</div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+          <div><label class="answer-content"><input type="checkbox">马应龙 麝香痔疮栓</label></div>
+          <div><label class="answer-content"><input type="checkbox">马应龙 麝香痔疮膏</label></div>
+          <div><label class="answer-content"><input type="checkbox">荣昌制药 肛泰栓</label></div>
+          <div><label class="answer-content"><input type="checkbox">荣昌制药 肛泰</label></div>
+          <div><label class="answer-content"><input type="checkbox">太宁 复方角菜酸酯栓</label></div>
+          <div><label class="answer-content"><input type="checkbox">太宁 复方角菜酸酯乳膏</label></div>
+        </div>
+        <label class="answer-content answer-content-next">没有或不知道...</label>
+      </span>
+        </div>
+
+      </div>
+      <div id="app29" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">你还用过以下哪些药？</div>
+        <div class="q-index"><span class="item">29</span>/31</div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+          <div><label class="answer-content"><input type="checkbox">同仁堂 地榆槐角丸</label></div>
+          <div><label class="answer-content"><input type="checkbox">敬修堂 化痔栓</label></div>
+          <div><label class="answer-content"><input type="checkbox">兴业 痔疾洗液</label></div>
+          <div><label class="answer-content"><input type="checkbox">片仔癀 复方片仔癀痔疮软膏</label></div>
+          <div><label class="answer-content"><input type="checkbox">太福 槐角丸</label></div>
+          <div><label class="answer-content"><input type="checkbox">天和仁 九华痔疮栓</label></div>
+          <div><label class="answer-content"><input type="checkbox">汉方 鳖甲消痔胶囊</label></div></div>
+          <label class="answer-content answer-content-next"><input type="checkbox">没有或不知道...</label>
+         </span>
+        </div>
+
+      </div>
+      <div id="app30" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">如你还尝试过其他方法，可填写在这里。</div>
+        <div class="q-index"><span class="item">30</span>/31
+        </div>
+        <div class="answer-wrap">
+             <span>
+            <span class="answer-content-textarea"><textarea placeholder="请填写在这里"></textarea>
+            </span>
+          <label class="answer-content answer-content-next">下一题</label>
+          </span>
+        </div>
+
+      </div>
+      <div id="app31" class="swiper-slide">
+        <div class="img-doc-s"></div>
+        <div class="question-content">采用这些方法之后，效果如何？</div>
+        <div class="q-index"><span class="item">31</span>/31 </div>
+        <div class="answer-wrap">
+          <span>
+          <div>
+            <div><label class="answer-content"><input type="radio" name="radio31">症状减轻/消失</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio31">没有什么变化</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio31">症状恶化</label></div>
+            <div><label class="answer-content"><input type="radio" name="radio31">我没有采用，不知道效果</label></div>
+           </div>
+        </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/mobiscroll/mobiscroll.js"></script>
+<script src="js/swiper/swiper.jquery.min.js"></script>
+<script src="js/content.js"></script>
+</html>
